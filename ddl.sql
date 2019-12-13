@@ -17,16 +17,16 @@ drop database test;
 -- Revise table name
 show tables;
 -- Revise the field's data type
-describe container_event;
+describe student;
 -- Revise field name
-describe container_event;
+describe student;
 -- Add field
-alter table test_table add column a int(1);
+alter table student add column age int(3);
 -- Delete field
-alter table test_table drop column a;
+alter table student drop column age;
 -- Revise the table's storage engine
-show table status where Name = 'test_table';
+show table status where Name = 'student';
 -- Delete the table's foreign key restriant
-alter table test_table drop foreign key test_key;
+alter table student drop foreign key test_key;
 -- Delete a table
-drop table test_table;
+drop table student;
