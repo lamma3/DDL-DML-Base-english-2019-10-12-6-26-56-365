@@ -1,8 +1,8 @@
 -- Insert record
-insert into test_table (a) values (1);
+insert into student (age) values (1);
 -- Revise record
-select * from test_table;
+select * from student;
 --  Delete record
-delete from test_table where a = 1;
+delete from student where age = 1;
 -- Search record
-select * from test_table where a = 1;
+select * from student where age = 1;
